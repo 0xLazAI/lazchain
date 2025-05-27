@@ -3,7 +3,7 @@
 FROM lukemathwalker/cargo-chef:latest-rust-1 AS chef
 WORKDIR /app
 
-LABEL org.opencontainers.image.source=https://github.com/MetisProtocol/metis-sdk
+LABEL org.opencontainers.image.source=https://github.com/0xLazAI/lazchain
 LABEL org.opencontainers.image.licenses="Apache-2.0"
 
 # Install system dependencies
