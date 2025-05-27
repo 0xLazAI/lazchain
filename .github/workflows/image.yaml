@@ -7,9 +7,9 @@ on:
 
 env:
   REPO_NAME: ${{ github.repository_owner }}/metis-sdk
-  IMAGE_NAME: metisprotocol/hyperion
+  IMAGE_NAME: 0xlazai/lazchain
   CARGO_TERM_COLOR: always
-  DOCKER_IMAGE_NAME: ghcr.io/metisprotocol/hyperion
+  DOCKER_IMAGE_NAME: ghcr.io/0xlazai/lazchain
   DOCKER_USERNAME: ${{ github.actor }}
 
 jobs:
@@ -23,9 +23,9 @@ jobs:
       fail-fast: false
       matrix:
         build:
-          - name: 'Build and push hyperion image'
+          - name: 'Build and push lazchain image'
             command: 'make PROFILE=maxperf docker-build-push'
-          - name: 'Build and push hyperion image, tag as "latest"'
+          - name: 'Build and push lazchain image, tag as "latest"'
             command: 'make PROFILE=maxperf docker-build-push-latest'
     steps:
       - uses: actions/checkout@v4
