@@ -3,7 +3,7 @@
 # locatable in `./dist/bin/$TARGETARCH`
 FROM --platform=$TARGETPLATFORM ubuntu:22.04
 
-LABEL org.opencontainers.image.source=https://github.com/MetisProtocol/metis-sdk
+LABEL org.opencontainers.image.source=https://github.com/0xLazAI/lazchain
 LABEL org.opencontainers.image.licenses="MIT OR Apache-2.0"
 
 # Filled by docker buildx
